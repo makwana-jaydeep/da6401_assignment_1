@@ -1,0 +1,1 @@
+{"_wandb":{"runtime":82},"_timestamp":1.7723640559262664e+09,"val_acc":0.974,"activation":"relu","_step":9,"train_loss":0.023964990876719508,"epoch":10,"dead_neuron_fraction":0.0078125,"_runtime":82}

@@ -1,0 +1,12 @@
+{"time":"2026-02-28T20:29:45.7077155+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-28T20:29:46.1371623+05:30","level":"INFO","msg":"stream: created new stream","id":"jfavdb2o"}
+{"time":"2026-02-28T20:29:46.1371623+05:30","level":"INFO","msg":"handler: started","stream_id":"jfavdb2o"}
+{"time":"2026-02-28T20:29:46.1393278+05:30","level":"INFO","msg":"stream: started","id":"jfavdb2o"}
+{"time":"2026-02-28T20:29:46.1393278+05:30","level":"INFO","msg":"sender: started","stream_id":"jfavdb2o"}
+{"time":"2026-02-28T20:29:46.1393278+05:30","level":"INFO","msg":"writer: started","stream_id":"jfavdb2o"}
+{"time":"2026-02-28T20:30:23.910628+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-28T20:30:24.249837+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-28T20:30:24.2592554+05:30","level":"INFO","msg":"stream: closing","id":"jfavdb2o"}
+{"time":"2026-02-28T20:30:24.2592554+05:30","level":"INFO","msg":"handler: closed","stream_id":"jfavdb2o"}
+{"time":"2026-02-28T20:30:24.2604482+05:30","level":"INFO","msg":"sender: closed","stream_id":"jfavdb2o"}
+{"time":"2026-02-28T20:30:24.2604482+05:30","level":"INFO","msg":"stream: closed","id":"jfavdb2o"}

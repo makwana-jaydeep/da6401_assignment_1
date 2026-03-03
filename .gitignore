@@ -1,0 +1,8 @@
+*.venv
+*.pyc
+*.__pycache__/    
+notebooks/.ipynb_checkpoints/
+*.vscode/
+*.env
+.env/
+venv/

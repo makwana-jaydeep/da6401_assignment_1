@@ -1,0 +1,12 @@
+{"time":"2026-02-28T20:40:53.6053664+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-28T20:40:54.0390751+05:30","level":"INFO","msg":"stream: created new stream","id":"ptunm39h"}
+{"time":"2026-02-28T20:40:54.0390751+05:30","level":"INFO","msg":"handler: started","stream_id":"ptunm39h"}
+{"time":"2026-02-28T20:40:54.0412561+05:30","level":"INFO","msg":"stream: started","id":"ptunm39h"}
+{"time":"2026-02-28T20:40:54.0412561+05:30","level":"INFO","msg":"sender: started","stream_id":"ptunm39h"}
+{"time":"2026-02-28T20:40:54.0412561+05:30","level":"INFO","msg":"writer: started","stream_id":"ptunm39h"}
+{"time":"2026-02-28T20:41:56.9600829+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-28T20:41:57.3231926+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-28T20:41:57.3324596+05:30","level":"INFO","msg":"stream: closing","id":"ptunm39h"}
+{"time":"2026-02-28T20:41:57.3324596+05:30","level":"INFO","msg":"handler: closed","stream_id":"ptunm39h"}
+{"time":"2026-02-28T20:41:57.3336961+05:30","level":"INFO","msg":"sender: closed","stream_id":"ptunm39h"}
+{"time":"2026-02-28T20:41:57.3340887+05:30","level":"INFO","msg":"stream: closed","id":"ptunm39h"}

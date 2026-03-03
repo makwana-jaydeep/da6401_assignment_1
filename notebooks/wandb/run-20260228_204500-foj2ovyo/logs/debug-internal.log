@@ -1,0 +1,12 @@
+{"time":"2026-02-28T20:45:02.6800039+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-28T20:45:03.1178057+05:30","level":"INFO","msg":"stream: created new stream","id":"foj2ovyo"}
+{"time":"2026-02-28T20:45:03.1178057+05:30","level":"INFO","msg":"handler: started","stream_id":"foj2ovyo"}
+{"time":"2026-02-28T20:45:03.1194472+05:30","level":"INFO","msg":"stream: started","id":"foj2ovyo"}
+{"time":"2026-02-28T20:45:03.1194472+05:30","level":"INFO","msg":"writer: started","stream_id":"foj2ovyo"}
+{"time":"2026-02-28T20:45:03.1194472+05:30","level":"INFO","msg":"sender: started","stream_id":"foj2ovyo"}
+{"time":"2026-02-28T20:45:21.6802777+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-28T20:45:22.2028697+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-28T20:45:22.2153103+05:30","level":"INFO","msg":"stream: closing","id":"foj2ovyo"}
+{"time":"2026-02-28T20:45:22.2153103+05:30","level":"INFO","msg":"handler: closed","stream_id":"foj2ovyo"}
+{"time":"2026-02-28T20:45:22.2158238+05:30","level":"INFO","msg":"sender: closed","stream_id":"foj2ovyo"}
+{"time":"2026-02-28T20:45:22.2158238+05:30","level":"INFO","msg":"stream: closed","id":"foj2ovyo"}

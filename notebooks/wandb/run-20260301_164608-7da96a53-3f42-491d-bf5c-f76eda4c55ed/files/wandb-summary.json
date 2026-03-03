@@ -1,0 +1,1 @@
+{"activation":"sigmoid","_wandb":{"runtime":19},"_runtime":19,"num_layers":3,"_timestamp":1.7723637888898332e+09,"_step":84,"step":4200,"first_layer_grad_norm":0.22991425451689218}

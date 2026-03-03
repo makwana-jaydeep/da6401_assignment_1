@@ -1,0 +1,12 @@
+{"time":"2026-02-28T20:38:21.5697836+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-28T20:38:22.0202275+05:30","level":"INFO","msg":"stream: created new stream","id":"hwdc32e9"}
+{"time":"2026-02-28T20:38:22.0202275+05:30","level":"INFO","msg":"handler: started","stream_id":"hwdc32e9"}
+{"time":"2026-02-28T20:38:22.0218663+05:30","level":"INFO","msg":"stream: started","id":"hwdc32e9"}
+{"time":"2026-02-28T20:38:22.0218663+05:30","level":"INFO","msg":"writer: started","stream_id":"hwdc32e9"}
+{"time":"2026-02-28T20:38:22.0218663+05:30","level":"INFO","msg":"sender: started","stream_id":"hwdc32e9"}
+{"time":"2026-02-28T20:38:44.8088387+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-28T20:38:45.1368634+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-28T20:38:45.148191+05:30","level":"INFO","msg":"stream: closing","id":"hwdc32e9"}
+{"time":"2026-02-28T20:38:45.148191+05:30","level":"INFO","msg":"handler: closed","stream_id":"hwdc32e9"}
+{"time":"2026-02-28T20:38:45.1492955+05:30","level":"INFO","msg":"sender: closed","stream_id":"hwdc32e9"}
+{"time":"2026-02-28T20:38:45.1498764+05:30","level":"INFO","msg":"stream: closed","id":"hwdc32e9"}

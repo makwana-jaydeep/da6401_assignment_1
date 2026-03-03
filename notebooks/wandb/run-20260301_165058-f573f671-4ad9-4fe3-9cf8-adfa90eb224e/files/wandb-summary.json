@@ -1,0 +1,1 @@
+{"val_acc":0.9756666666666667,"_wandb":{"runtime":74},"epoch":10,"_step":9,"_runtime":74,"train_loss":0.03426716705841432,"activation":"tanh","dead_neuron_fraction":0,"_timestamp":1.7723641339115698e+09}

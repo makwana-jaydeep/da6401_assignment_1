@@ -1,0 +1,1 @@
+{"val_acc":0.9758333333333333,"optimizer":"rmsprop","_timestamp":1.7723635749866686e+09,"_step":9,"epoch":10,"_wandb":{"runtime":109},"_runtime":109,"train_loss":0.022837192086504695}

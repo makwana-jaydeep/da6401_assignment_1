@@ -1,0 +1,24 @@
+{
+  "os":  "Windows-11-10.0.26200-SP0",
+  "python":  "CPython 3.13.12",
+  "startedAt":  "2026-02-28T14:39:59.420421Z",
+  "program":  "c:\\Users\\JAYDEEP\\Python_Project\\DA IITM\\DA6401\\A1\\da6401_assignment_1\\notebooks\\wandb_report.ipynb",
+  "codePath":  "c:\\Users\\JAYDEEP\\Python_Project\\DA IITM\\DA6401\\A1\\da6401_assignment_1\\notebooks\\wandb_report.ipynb",
+  "codePathLocal":  "wandb_report.ipynb",
+  "email":  "jaydeepmakwana316@gmail.com",
+  "root":  "c:\\Users\\JAYDEEP\\Python_Project\\DA IITM\\DA6401\\A1\\da6401_assignment_1\\notebooks",
+  "host":  "jaydeep",
+  "executable":  "c:\\Users\\JAYDEEP\\Python_Project\\DA IITM\\DA6401\\A1\\da6401_assignment_1\\.venv\\Scripts\\python.exe",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "487147433984",
+      "used":  "356046209024"
+    }
+  },
+  "memory":  {
+    "total":  "7966765056"
+  },
+  "writerId":  "l3ep4nxs2wgusdvfx0xbuygz8gm8pyz4"
+}

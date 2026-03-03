@@ -1,0 +1,12 @@
+{"time":"2026-02-28T20:25:11.4829855+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-02-28T20:25:11.962371+05:30","level":"INFO","msg":"stream: created new stream","id":"ahgp4wlu"}
+{"time":"2026-02-28T20:25:11.962371+05:30","level":"INFO","msg":"handler: started","stream_id":"ahgp4wlu"}
+{"time":"2026-02-28T20:25:11.9639872+05:30","level":"INFO","msg":"stream: started","id":"ahgp4wlu"}
+{"time":"2026-02-28T20:25:11.9639872+05:30","level":"INFO","msg":"sender: started","stream_id":"ahgp4wlu"}
+{"time":"2026-02-28T20:25:11.9639872+05:30","level":"INFO","msg":"writer: started","stream_id":"ahgp4wlu"}
+{"time":"2026-02-28T20:25:26.2935247+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-02-28T20:25:26.6646624+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-02-28T20:25:26.6764328+05:30","level":"INFO","msg":"stream: closing","id":"ahgp4wlu"}
+{"time":"2026-02-28T20:25:26.6764328+05:30","level":"INFO","msg":"handler: closed","stream_id":"ahgp4wlu"}
+{"time":"2026-02-28T20:25:26.6780058+05:30","level":"INFO","msg":"sender: closed","stream_id":"ahgp4wlu"}
+{"time":"2026-02-28T20:25:26.6780058+05:30","level":"INFO","msg":"stream: closed","id":"ahgp4wlu"}

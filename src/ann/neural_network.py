@@ -28,7 +28,7 @@ class NeuralNetwork:
         hidden_size = getattr(a, 'hidden_size', [128] * (num_layers - 1))
         hidden_sizes = hidden_size if isinstance(hidden_size, list) else [hidden_size] * (num_layers - 1)
 
-        # num_layers includes output layer, so hidden layers = num_layers - 1
+        # num_layers includes output layer, so hidden layer equls num_layers - 1
         num_hidden = num_layers - 1
         if len(hidden_sizes) < num_hidden:
             hidden_sizes = hidden_sizes + [hidden_sizes[-1]] * (num_hidden - len(hidden_sizes))
@@ -36,7 +36,7 @@ class NeuralNetwork:
             hidden_sizes = hidden_sizes[:num_hidden]
 
         dims = [784] + hidden_sizes + [10]
-        # dims will have num_layers connections exactly
+        # dim will have num_layers connections exactly
         activation = getattr(a, 'activation', 'relu')
         weight_init = getattr(a, 'weight_init', 'xavier')
 

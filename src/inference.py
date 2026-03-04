@@ -21,16 +21,16 @@ def parse_arguments():
     # Same CLI as train.py with best config as default values
     parser.add_argument("-d", "--dataset", type=str, default="mnist",
                         choices=["mnist", "fashion_mnist"])
-    parser.add_argument("-e", "--epochs", type=int, default=15)
-    parser.add_argument("-b", "--batch_size", type=int, default=128)
+    parser.add_argument("-e", "--epochs", type=int, default=20)
+    parser.add_argument("-b", "--batch_size", type=int, default=64)
     parser.add_argument("-l", "--loss", type=str, default="cross_entropy",
                         choices=["cross_entropy", "mse"])
     parser.add_argument("-o", "--optimizer", type=str, default="rmsprop",
                         choices=["sgd", "momentum", "nag"])
     parser.add_argument("-lr", "--learning_rate", type=float, default=1e-3)
     parser.add_argument("-wd", "--weight_decay", type=float, default=0.0)
-    parser.add_argument("-nhl", "--num_layers", type=int, default=4)
-    parser.add_argument("-sz", "--hidden_size", type=int, nargs="+", default=[128, 128, 128, 128])
+    parser.add_argument("-nhl", "--num_layers", type=int, default=3)
+    parser.add_argument("-sz", "--hidden_size", type=int, nargs="+", default=[128, 128, 128])
     parser.add_argument("-a", "--activation", type=str, default="relu",
                         choices=["sigmoid", "tanh", "relu"])
     parser.add_argument("-w_i", "--weight_init", type=str, default="xavier",

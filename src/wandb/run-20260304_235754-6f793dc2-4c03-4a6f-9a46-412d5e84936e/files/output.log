@@ -1,0 +1,25 @@
+Training...
+Epoch 1/20 | loss: 0.2625 | train_acc: 0.9540 | val_acc: 0.9477
+Epoch 2/20 | loss: 0.1086 | train_acc: 0.9779 | val_acc: 0.9670
+Epoch 3/20 | loss: 0.0780 | train_acc: 0.9775 | val_acc: 0.9645
+Epoch 4/20 | loss: 0.0604 | train_acc: 0.9900 | val_acc: 0.9748
+Epoch 5/20 | loss: 0.0483 | train_acc: 0.9860 | val_acc: 0.9683
+Epoch 6/20 | loss: 0.0390 | train_acc: 0.9921 | val_acc: 0.9762
+Epoch 7/20 | loss: 0.0348 | train_acc: 0.9950 | val_acc: 0.9778
+Epoch 8/20 | loss: 0.0294 | train_acc: 0.9919 | val_acc: 0.9727
+Epoch 9/20 | loss: 0.0254 | train_acc: 0.9944 | val_acc: 0.9767
+Epoch 10/20 | loss: 0.0232 | train_acc: 0.9964 | val_acc: 0.9770
+Epoch 11/20 | loss: 0.0186 | train_acc: 0.9927 | val_acc: 0.9738
+Epoch 12/20 | loss: 0.0173 | train_acc: 0.9956 | val_acc: 0.9768
+Epoch 13/20 | loss: 0.0166 | train_acc: 0.9971 | val_acc: 0.9780
+Epoch 14/20 | loss: 0.0163 | train_acc: 0.9972 | val_acc: 0.9772
+Epoch 15/20 | loss: 0.0151 | train_acc: 0.9965 | val_acc: 0.9767
+Epoch 16/20 | loss: 0.0115 | train_acc: 0.9969 | val_acc: 0.9803
+Epoch 17/20 | loss: 0.0117 | train_acc: 0.9964 | val_acc: 0.9765
+Epoch 18/20 | loss: 0.0120 | train_acc: 0.9976 | val_acc: 0.9798
+Epoch 19/20 | loss: 0.0120 | train_acc: 0.9968 | val_acc: 0.9762
+Epoch 20/20 | loss: 0.0110 | train_acc: 0.9984 | val_acc: 0.9790
+
+Test  | acc: 0.9770 | f1: 0.9767 | precision: 0.9770 | recall: 0.9766
+Model saved to best_model.npy
+Config saved to C:\Users\JAYDEEP\Python_Project\DA IITM\DA6401\A1\da6401_assignment_1\src\best_config.json

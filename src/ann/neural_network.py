@@ -116,17 +116,26 @@ class NeuralNetwork:
         rec = recall_score(y, preds, average="macro", zero_division=0)
         return {"loss": loss, "accuracy": acc, "f1": f1, "precision": prec, "recall": rec, "logits": logits}
 
-    #  to get the weights values
     def get_weights(self):
-        return {str(i): {"W": l.W.copy(), "b": l.b.copy()} for i, l in enumerate(self.layers)}
-    # to set the weights values
+        weights = {}
+        for i, l in enumerate(self.layers):
+            weights[f"W{i}"] = l.W.copy()
+            weights[f"b{i}"] = l.b.copy()
+        return weights
+
     def set_weights(self, weights):
         for i, layer in enumerate(self.layers):
-            if str(i) in weights:
-                key = str(i)
+            if f"W{i}" in weights:
+                # flat format
+                layer.W = weights[f"W{i}"].copy()
+                layer.b = weights[f"b{i}"].copy()
+            elif str(i) in weights:
+                # nested string format
+                layer.W = weights[str(i)]["W"].copy()
+                layer.b = weights[str(i)]["b"].copy()
             elif i in weights:
-                key = i
+                # nested int format
+                layer.W = weights[i]["W"].copy()
+                layer.b = weights[i]["b"].copy()
             else:
                 raise KeyError(f"Layer {i} not found. Keys: {list(weights.keys())}")
-            layer.W = weights[key]["W"].copy()
-            layer.b = weights[key]["b"].copy()

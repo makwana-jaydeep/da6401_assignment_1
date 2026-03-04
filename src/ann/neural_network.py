@@ -118,12 +118,15 @@ class NeuralNetwork:
 
     #  to get the weights values
     def get_weights(self):
-        # save with both int and str key
-        return {i: {"W": l.W.copy(), "b": l.b.copy()} for i, l in enumerate(self.layers)}
+        return {str(i): {"W": l.W.copy(), "b": l.b.copy()} for i, l in enumerate(self.layers)}
     # to set the weights values
     def set_weights(self, weights):
         for i, layer in enumerate(self.layers):
-            # handle both int and str keys
-            key = i if i in weights else str(i)
+            if str(i) in weights:
+                key = str(i)
+            elif i in weights:
+                key = i
+            else:
+                raise KeyError(f"Layer {i} not found. Keys: {list(weights.keys())}")
             layer.W = weights[key]["W"].copy()
             layer.b = weights[key]["b"].copy()

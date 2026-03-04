@@ -24,7 +24,15 @@ class NeuralNetwork:
     # building the NN architecture
     def _build(self):
         a = self.args
-        hidden_sizes = a.hidden_size if isinstance(a.hidden_size, list) else [a.hidden_size] * a.num_layers
+        num_layers = getattr(a, 'num_layers', 4)
+        hidden_size = getattr(a, 'hidden_size', [128] * num_layers)
+        hidden_sizes = hidden_size if isinstance(hidden_size, list) else [hidden_size] * num_layers
+
+        if len(hidden_sizes) < num_layers:
+            hidden_sizes = hidden_sizes + [hidden_sizes[-1]] * (num_layers - len(hidden_sizes))
+        elif len(hidden_sizes) > num_layers:
+            hidden_sizes = hidden_sizes[:num_layers]
+
         dims = [784] + hidden_sizes + [10]
         for i in range(len(dims) - 1):
             act = a.activation if i < len(dims) - 2 else None  # last layer no activation

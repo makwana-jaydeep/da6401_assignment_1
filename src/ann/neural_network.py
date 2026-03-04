@@ -24,20 +24,25 @@ class NeuralNetwork:
     # building the NN architecture
     def _build(self):
         a = self.args
-        num_layers = getattr(a, 'num_layers', 4)
-        hidden_size = getattr(a, 'hidden_size', [128] * num_layers)
-        hidden_sizes = hidden_size if isinstance(hidden_size, list) else [hidden_size] * num_layers
+        num_layers = getattr(a, 'num_layers', 3)
+        hidden_size = getattr(a, 'hidden_size', [128] * (num_layers - 1))
+        hidden_sizes = hidden_size if isinstance(hidden_size, list) else [hidden_size] * (num_layers - 1)
 
-        if len(hidden_sizes) < num_layers:
-            hidden_sizes = hidden_sizes + [hidden_sizes[-1]] * (num_layers - len(hidden_sizes))
-        elif len(hidden_sizes) > num_layers:
-            hidden_sizes = hidden_sizes[:num_layers]
+        # num_layers includes output layer, so hidden layers = num_layers - 1
+        num_hidden = num_layers - 1
+        if len(hidden_sizes) < num_hidden:
+            hidden_sizes = hidden_sizes + [hidden_sizes[-1]] * (num_hidden - len(hidden_sizes))
+        elif len(hidden_sizes) > num_hidden:
+            hidden_sizes = hidden_sizes[:num_hidden]
 
         dims = [784] + hidden_sizes + [10]
-        for i in range(len(dims) - 1):
-            act = a.activation if i < len(dims) - 2 else None  # last layer no activation
-            self.layers.append(Layer(dims[i], dims[i + 1], act, a.weight_init))
+        # dims will have num_layers connections exactly
+        activation = getattr(a, 'activation', 'relu')
+        weight_init = getattr(a, 'weight_init', 'xavier')
 
+        for i in range(len(dims) - 1):
+            act = activation if i < len(dims) - 2 else None
+            self.layers.append(Layer(dims[i], dims[i + 1], act, weight_init))
     # forward pass
     def forward(self, X):
         out = X

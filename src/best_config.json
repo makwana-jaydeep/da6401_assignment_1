@@ -16,6 +16,6 @@
   "weight_init": "xavier",
   "wandb_project": "da6401_assignment1",
   "wandb_entity": null,
-  "no_wandb": false,
+  "no_wandb": true,
   "model_save_path": "best_model.npy"
 }

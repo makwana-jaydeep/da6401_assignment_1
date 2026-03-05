@@ -1,1 +1,0 @@
-{"optimizer":"sgd","_wandb":{"runtime":101},"_runtime":101,"_timestamp":1.7723632815306776e+09,"_step":9,"epoch":10,"train_loss":0.155204764588724,"val_acc":0.9515}

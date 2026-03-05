@@ -1,11 +1,7 @@
-"""
-Optimization Algorithms
-Implements: SGD, Momentum, NAG, RMSProp, Adam, Nadam
-"""
-
 import numpy as np
 
-# optimizer classes and their state management
+# optimizer classes and their state management with classes and methods
+
 class SGD:
     def __init__(self, lr, weight_decay=0.0, **kwargs):
         self.lr = lr
@@ -41,7 +37,7 @@ class Momentum:
 
 
 class NAG:
-    """Nesterov Accelerated Gradient"""
+    # nestrov acclerated grad
     def __init__(self, lr, weight_decay=0.0, beta=0.9, **kwargs):
         self.lr = lr
         self.wd = weight_decay

@@ -11,6 +11,7 @@ args = SimpleNamespace(
     num_layers=2, hidden_size=[8, 8], activation='tanh',
     weight_init='xavier', wandb_project='test', wandb_entity=None
 )
+
 # create model based on CLI args
 model = NeuralNetwork(args)
 X = np.random.randn(5, 784) * 0.1
@@ -24,6 +25,7 @@ numerical = np.zeros_like(model.layers[0].W)
 # compute grads
 for i in range(5):
     for j in range(5):
+        
         model.layers[0].W[i,j] += eps
         lp = LOSS_FN['cross_entropy'](model.forward(X), y)
         model.layers[0].W[i,j] -= 2*eps

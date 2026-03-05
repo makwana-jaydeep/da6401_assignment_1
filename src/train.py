@@ -1,8 +1,3 @@
-"""
-Main Training Script
-Entry point for training neural networks with command-line arguments
-"""
-
 import argparse
 import json
 import sys
@@ -82,28 +77,30 @@ def main():
         wandb_run=run,
     )
 
-    # use best weights if available
+    # use best weights 
     if best_weights is not None:
         model.set_weights(best_weights)
 
     test_metrics = model.evaluate(X_test, y_test)
-    print(f"\nTest  | acc: {test_metrics['accuracy']:.4f} | f1: {test_metrics['f1']:.4f} "
-          f"| precision: {test_metrics['precision']:.4f} | recall: {test_metrics['recall']:.4f}")
+    print(f"\nTest |acc: {test_metrics['accuracy']:.4f} |f1: {test_metrics['f1']:.4f} "
+          f"|precision: {test_metrics['precision']:.4f} |recall: {test_metrics['recall']:.4f}")
 
     if run is not None:
         run.log({"test_acc": test_metrics["accuracy"], "test_f1": test_metrics["f1"]})
 
-    # save model in src folder along with best config file
+    # saving model
     save_path = args.model_save_path
     os.makedirs(os.path.dirname(os.path.abspath(save_path)), exist_ok=True)
     weights = model.get_weights()
     np.save(save_path, weights)
     print(f"Model saved to {save_path}")
 
-    # save config
+    # saving config into src folder
     config_path = os.path.join(os.path.dirname(os.path.abspath(save_path)), "best_config.json")
+
     with open(config_path, "w") as f:
         json.dump(vars(args), f, indent=2)
+
     print(f"Config saved to {config_path}")
 
     if run is not None:

@@ -1,8 +1,3 @@
-"""
-Inference Script
-Evaluate trained models on test sets
-"""
-
 import argparse
 import json
 import sys
@@ -58,7 +53,7 @@ def evaluate_model(model, X_test, y_test):
         "recall": metrics["recall"],
     }
 
-# Main function to run inference, loading model and data, and print result
+# Main function to run inference, loading model and data, and print the  results
 def main():
     args = parse_arguments()
 

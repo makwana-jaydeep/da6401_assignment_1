@@ -30,9 +30,8 @@ class NeuralNetwork:
         hidden_size = getattr(a, 'hidden_size', [128] * (num_layers - 1))
 
         hidden_sizes = hidden_size if isinstance(hidden_size, list) else [hidden_size] * (num_layers - 1)
-
-        # num_layers includes output layer, so hidden layer equls num_layers - 1
-        num_hidden = num_layers - 1
+        
+        num_hidden = num_layers
 
         if len(hidden_sizes) < num_hidden:
             hidden_sizes = hidden_sizes + [hidden_sizes[-1]] * (num_hidden - len(hidden_sizes))

@@ -1,0 +1,28 @@
+{
+  "os":  "Windows-11-10.0.26200-SP0",
+  "python":  "CPython 3.13.12",
+  "startedAt":  "2026-03-07T09:18:26.710051Z",
+  "program":  "C:\\Users\\JAYDEEP\\Python_Project\\DA IITM\\DA6401\\A1\\da6401_assignment_1\\src\\train.py",
+  "codePath":  "src\\train.py",
+  "codePathLocal":  "src\\train.py",
+  "git":  {
+    "remote":  "https://github.com/makwana-jaydeep/da6401_assignment_1.git",
+    "commit":  "09d8188c01169a523ecd198d32b4b018120d98bb"
+  },
+  "email":  "jaydeepmakwana316@gmail.com",
+  "root":  "C:\\Users\\JAYDEEP\\Python_Project\\DA IITM\\DA6401\\A1\\da6401_assignment_1",
+  "host":  "jaydeep",
+  "executable":  "C:\\Users\\JAYDEEP\\Python_Project\\DA IITM\\DA6401\\A1\\da6401_assignment_1\\.venv\\Scripts\\python.exe",
+  "cpu_count":  6,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "487147433984",
+      "used":  "362034298880"
+    }
+  },
+  "memory":  {
+    "total":  "7966765056"
+  },
+  "writerId":  "21qa4ql5lkl0fy15fss6v7oxgedfy7db"
+}

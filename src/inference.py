@@ -32,7 +32,7 @@ def parse_arguments():
                         choices=["random", "xavier"])
     parser.add_argument("-w_p", "--wandb_project", type=str, default="da6401_assignment1")
     parser.add_argument("--wandb_entity", type=str, default=None)
-    parser.add_argument("--model_path", type=str, default="best_model.npy")
+    parser.add_argument("--model_path", type=str, default="src/best_model.npy")
 
     return parser.parse_args()
 

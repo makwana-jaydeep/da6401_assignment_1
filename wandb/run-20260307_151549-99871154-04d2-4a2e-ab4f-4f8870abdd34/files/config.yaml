@@ -2,19 +2,19 @@ _wandb:
     value:
         cli_version: 0.25.0
         e:
-            amr1900y93oxa4ruyx0s0ws9lsb9w03a:
+            wm1uw79vvulhd02u0xqkuar37sso14wu:
                 codePath: src\train.py
-                codePathLocal: train.py
+                codePathLocal: src\train.py
                 cpu_count: 6
                 cpu_count_logical: 12
                 disk:
                     /:
                         total: "487147433984"
-                        used: "356947120128"
+                        used: "362057314304"
                 email: jaydeepmakwana316@gmail.com
                 executable: C:\Users\JAYDEEP\Python_Project\DA IITM\DA6401\A1\da6401_assignment_1\.venv\Scripts\python.exe
                 git:
-                    commit: 9cb8a2b98b0d52e4a4889c62846b1953ee6190f0
+                    commit: 73b44f885f85328453cf5bd70055b2b7510883d8
                     remote: https://github.com/makwana-jaydeep/da6401_assignment_1.git
                 host: jaydeep
                 memory:
@@ -22,9 +22,9 @@ _wandb:
                 os: Windows-11-10.0.26200-SP0
                 program: C:\Users\JAYDEEP\Python_Project\DA IITM\DA6401\A1\da6401_assignment_1\src\train.py
                 python: CPython 3.13.12
-                root: C:\Users\JAYDEEP\Python_Project\DA IITM\DA6401\A1\da6401_assignment_1\src
-                startedAt: "2026-03-04T19:41:12.748308Z"
-                writerId: amr1900y93oxa4ruyx0s0ws9lsb9w03a
+                root: C:\Users\JAYDEEP\Python_Project\DA IITM\DA6401\A1\da6401_assignment_1
+                startedAt: "2026-03-07T09:45:49.875809Z"
+                writerId: wm1uw79vvulhd02u0xqkuar37sso14wu
         m: []
         python_version: 3.13.12
         t:
@@ -64,7 +64,6 @@ hidden_size:
         - 128
         - 128
         - 128
-        - 128
 learning_rate:
     value: 0.001
 loss:
@@ -74,7 +73,7 @@ model_save_path:
 no_wandb:
     value: false
 num_layers:
-    value: 4
+    value: 3
 optimizer:
     value: rmsprop
 wandb_entity:
